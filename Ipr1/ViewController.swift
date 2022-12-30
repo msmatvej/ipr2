@@ -22,7 +22,7 @@ class ViewController: NSViewController {
         let radius = Double(radiusTextField.stringValue) ?? 0
         
         if radius == 0 {
-            volumeLabel.stringValue = "Ответ не удалось посчитать, исправьте значение радиуса!"
+            volumeLabel.stringValue = "Ответ не удалось посчитать, проверьте радиус!"
         } else {
             // Calculate the volume of the sphere
             let volume = (4.0 / 3.0) * Double.pi * pow(radius, 3)
